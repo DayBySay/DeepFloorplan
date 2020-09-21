@@ -20,7 +20,7 @@ from tf_record import read_record, read_bd_rm_record
 GPU_ID = '0'
 
 def data_loader_bd_rm_from_tfrecord(batch_size=1):
-	paths = open('../dataset/r3d_train.txt', 'r').read().splitlines()
+	paths = open('dataset/r3d_train.txt', 'r').read().splitlines()
 
 	loader_dict = read_bd_rm_record('../dataset/r3d.tfrecords', batch_size=batch_size, size=512)
 
@@ -31,7 +31,7 @@ def data_loader_bd_rm_from_tfrecord(batch_size=1):
 class Network(object):
 	"""docstring for Network"""
 	def __init__(self, dtype=tf.float32):
-		print 'Initial nn network object...'
+		print('Initial nn network object...')
 		self.dtype = dtype
 		self.pre_train_restore_map = {'vgg_16/conv1/conv1_1/weights':'FNet/conv1_1/W', # {'checkpoint_scope_var_name':'current_scope_var_name'} shape must be the same
 									'vgg_16/conv1/conv1_1/biases':'FNet/conv1_1/b',	
@@ -150,7 +150,7 @@ class Network(object):
 			out_shape = [batch_size, h*stride[1], w*stride[2], dim]
 		else:
 			out_shape = [batch_size, (h-1)*stride[1]+size[0],
-									(w-1)*strdie[2]+size[1], dim]
+									(w-1)*stride[2]+size[1], dim]
 
 		out = tf.nn.conv2d_transpose(tensor, W, output_shape=tf.stack(out_shape),
 									strides=stride, padding=pad, name=name)
