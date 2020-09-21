@@ -11,18 +11,11 @@ This repository contains the code & annotation data for our ICCV 2019 paper: ['D
 
 ## Requirements
 
-- Please install OpenCV
-- Please install Python 2.7
-- Please install tensorflow-gpu
+Our code has been tested by using tensorflow-gpu==1.15.1 & OpenCV==3.3.1. We used Nvidia Geforce GTX1060 with CUDA 10.0 installed.
 
-Our code has been tested by using tensorflow-gpu==1.10.1 & OpenCV==3.1.0. We used Nvidia Titan Xp GPU with CUDA 9.0 installed.
-
-## Python packages
-
-- [numpy]
-- [scipy]
-- [Pillow]
-- [matplotlib]
+```bash
+conda env create -f=requirements.yml
+```
 
 ## Data
 
