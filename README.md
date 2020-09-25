@@ -2,7 +2,7 @@
 
 https://github.com/zlzeng/DeepFloorplanを、python3.6で動くように変更したリポジトリです
 
-## 環境
+## Requirements
 
 Our code has been tested by using tensorflow-gpu==1.15.1 & OpenCV==3.3.1. We used Nvidia Geforce GTX1060 with CUDA 10.0 installed.
 
