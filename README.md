@@ -1,6 +1,6 @@
 ## Introduction
 
-https://github.com/zlzeng/DeepFloorplanを、python3.6で動くように変更したリポジトリです
+https://github.com/zlzeng/DeepFloorplan を、python3.6で動くように変更したリポジトリです
 
 ## Requirements
 
