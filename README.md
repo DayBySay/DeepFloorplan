@@ -4,7 +4,7 @@ https://github.com/zlzeng/DeepFloorplan を、python3.6で動くように変更�
 
 ## Requirements
 
-Our code has been tested by using tensorflow-gpu==1.15.1 & OpenCV==3.3.1. We used Nvidia Geforce GTX1060 with CUDA 10.0 installed.
+Code has been tested by using tensorflow-gpu==1.15.1 & OpenCV==3.3.1. We used Nvidia Geforce GTX1060 with CUDA 10.0 installed.
 
 ```bash
 conda env create -f=requirements.yml
