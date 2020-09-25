@@ -1,15 +1,8 @@
-# Deep Floor Plan Recognition using a Multi-task Network with Room-boundary-Guided Attention
-By Zhiliang ZENG, Xianzhi LI, Ying Kin Yu, and Chi-Wing Fu
-
-[2019/08/28: updated train/test/score code & dataset]
-
-[2019/07/29: updated demo code & pretrained model]
-
 ## Introduction
 
-This repository contains the code & annotation data for our ICCV 2019 paper: ['Deep Floor Plan Recognition Using a Multi-Task Network with Room-Boundary-Guided Attention'](https://arxiv.org/abs/1908.11025). In this paper, we present a new method for recognizing floor plan elements by exploring the spatial relationship between floor plan elements, model a hierarchy of floor plan elements, and design a multi-task network to learn to recognize room-boundary and room-type elements in floor plans.
+https://github.com/zlzeng/DeepFloorplanを、python3.6で動くように変更したリポジトリです
 
-## Requirements
+## 環境
 
 Our code has been tested by using tensorflow-gpu==1.15.1 & OpenCV==3.3.1. We used Nvidia Geforce GTX1060 with CUDA 10.0 installed.
 
