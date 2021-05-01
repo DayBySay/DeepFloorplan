@@ -3,7 +3,8 @@ import argparse
 import numpy as np
 import tensorflow as tf
 
-from scipy.misc import imread, imsave, imresize
+from imageio import imread, imsave
+from PIL import Image
 from matplotlib import pyplot as plt
 
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
@@ -41,9 +42,8 @@ def ind2rgb(ind_im, color_map=floorplan_map):
 
 def main(args):
 	# load input
-	im = imread(args.im_path, mode='RGB')
-	im = im.astype(np.float32)
-	im = imresize(im, (512,512,3)) / 255.
+	im = imread(args.im_path, pilmode='RGB')
+	im = np.array(Image.fromarray(im).resize((512, 512), resample=2)) / 255
 
 	# create tensorflow session
 	with tf.Session() as sess:
